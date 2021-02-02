@@ -11,7 +11,18 @@ z = "I like turtles!"
 # Using the printf operator (%), print the following feeding in the values of x,
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
+"""
+        %d for digit
+        %f for float
+        %s for string
+"""
+
+print("x is %d, y is %f, z is %s"%(x, y, z))
 
 # Use the 'format' string method to print the same thing
-
+print("x is {}, y is {}, z is {}".format(x, "%.2f"%y, z))
 # Finally, print the same thing using an f-string
+"""
+:.2f in curly brackets is rounding to 2 places
+"""
+print(f"x is {x}, y is {y:.2f}, z is {z}")
